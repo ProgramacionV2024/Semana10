@@ -7,3 +7,15 @@ data class Personaje(
     val gender: String,
     val image: String
 )
+
+data class PersonajeInfo(
+    val count: Int,
+    val pages: Int,
+    val next: String?,
+    val prev: String?,
+)
+
+data class PersonajeResponse(
+    val info: PersonajeInfo,
+    val results: List<Personaje>
+)

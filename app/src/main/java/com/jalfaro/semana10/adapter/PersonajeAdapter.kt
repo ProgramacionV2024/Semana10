@@ -27,5 +27,6 @@ class PersonajeAdapter(val list: ArrayList<Personaje>): RecyclerView.Adapter<Per
     fun showNewData(newList :ArrayList<Personaje> ) {
         list.clear()
         list.addAll(newList)
+        notifyDataSetChanged()
     }
 }
